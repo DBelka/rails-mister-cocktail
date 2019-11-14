@@ -10,7 +10,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/">Our Logo</a>
+    <form class="form-inline">
+      <button class="btn btn-outline-primary" type="button">Homepage</button>
+      <div style="padding-left: 10px;">
+        <button class="btn btn-outline-success" type="button">Second button</button>
+      </div>
+    </form>
+  </nav>
+  <br>
   <body>
     <%= yield %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->

@@ -1,0 +1,23 @@
+<h1><%= @cocktail.name %></h1>
+
+<% @cocktail.doses.each do |dose| %>
+<%= dose.description %>
+<%= dose.ingredient.name %>
+<br>
+<% end %>
+<br>
+<%= link_to new_cocktail_dose_path(@cocktail) do %>
+<button class="btn btn-primary">Add a dose</button>
+<% end %>
+
+<!-- <div class="d-flex justify-content-center align-items-center" height="500px">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= @cocktail.name %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= @cocktail.ingredients %><%= @cocktail.doses %></h6>
+    </div>
+  </div>
+</div>
+
+
+ -->
