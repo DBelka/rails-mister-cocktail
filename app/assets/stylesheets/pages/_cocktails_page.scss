@@ -1,0 +1,19 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.header {
+  text-align: center;
+}
+
+.btn btn-primary {
+  color: white;
+}
+
+.banner {
+  height: 300px;
+  color: white;
+  justify-content: center;
+}
